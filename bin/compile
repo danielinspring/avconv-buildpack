@@ -7,4 +7,5 @@ cd $1
 curl https://github.com/CrowdDevelopment/avconv-binary/raw/master/avconv.tar.gz -s -O -L
 # untar the binary to the directory we want
 tar -C vendor -xvf avconv.tar.gz
-mv ./vendor/bin/avconv ./bin/avconv
+export PATH=~/vendor/bin
+# mv ./vendor/bin/avconv ./bin/avconv
